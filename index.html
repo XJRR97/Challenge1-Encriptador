@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Encriptador ᚷᚺᚱᚱ</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="caja-logo">
+
+                <img id="logo" src="logo Gary-modified.png" alt="logo encriptador">
+
+            </div>
+
+            <div class="advertencias">
+
+                <p class="mensajeadvertencia">Estas ingresando valores no permitidos!</p>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="elementos-encriptador">
+
+               <textarea id="ingreso-texto" class="ingreso-texto" type="text" maxlength="120" placeholder="Ingrese Texto Aquí"></textarea>
+
+            </section>
+
+            <section class="botones-encriptador">
+
+                <p>Solo escribir minusculas y sin acentos</p>
+                <button class="encriptar" id="encriptar">Encriptar</button>
+                <button class="desencriptar" id="desencriptar" >Desencriptar</button>
+
+            </section>
+
+            <section class="respuesta-encriptador">
+                <div class="texto-respuesta">
+
+                    <textarea id="respuesta" class="respuesta" placeholder="Aquí encontrará la respuesta!"></textarea>
+
+                </div>
+                <div class="copiar-texto">
+
+                    <button class="copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </body>
+
+    
+
+</html>
+
+<script src="script.js"></script>
