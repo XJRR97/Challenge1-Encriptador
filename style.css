@@ -20,21 +20,19 @@ header{
 }
 
 .advertencias{
-    /*display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;*/
-    
+    width: 50%;
+    margin: 0 auto;
 }
 
 .mensajeadvertencia{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 150%;
     color: #0A3871;
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 20px;
+    border: 2px solid #0A3871;
     
 }
 
@@ -42,9 +40,12 @@ img{
     width: 60%;
     margin: 4px 0 0;
 }
+.principal_encriptador{
+    width: 700px;
+}
 
 .elementos-encriptador{
-    width: 600px;
+    width: 400px;
     height: 360px;
     background: #d9def5;
     margin: 50px 0 0 100px;
@@ -187,3 +188,232 @@ img{
     font-size: 21px;
     transform: scale(0.95);
 }
+
+/*------------------------------------------------------------------------------------------------------*/
+/*celular*/
+@media screen and (min-width:350px) and (max-width:740px){
+    main{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    .caja-logo{
+        width: 200px;   
+    }
+
+    .principal_encriptador{
+        width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .elementos-encriptador{
+        margin: 0;
+        width: 100%;
+    }
+    .ingreso-texto{
+        width: 290px;
+        font-size: 25px;
+        display: block;
+        margin: 18px auto; 
+    }
+
+    .advertencias{
+        width: 100%;
+        height: 50pxpx;
+        display: block;
+        
+    }
+
+    .mensajeadvertencia{
+        margin: 10px auto;
+        width: 70%;
+        font-size: 15px;
+        border: 2px solid #0A3871;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #logo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .botones-encriptador{
+        width: 100%;
+        height: 120px;
+        margin: 0;
+        padding: 5px;
+        font-size: 18px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        
+    }
+
+    .botones-encriptador p{
+        margin: 0 0 0 15px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+ 
+    .encriptar{
+        grid-row-start: 2;
+        grid-row-end: -2 ;
+        width: 80%;
+        margin: 0 auto;
+        
+        /*margin: 0 12px 0 45px;*/
+    }
+
+    .desencriptar{
+        grid-row-start: -2;
+        grid-row-end: -1 ;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .respuesta-encriptador{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        top: 0;
+        left: 0%;
+        margin: 20px auto;
+        
+    }
+    .texto-respuesta{
+        width: 250px;
+        margin: 0 auto;
+        padding: 12px 0;
+        
+    }
+    .respuesta{
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: 12px auto;
+        text-align:start;
+    }
+
+}
+
+
+
+
+@media screen and (min-width:740px) and (max-width:980px){
+    main{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    .caja-logo{
+        width: 200px;   
+    }
+
+    .principal_encriptador{
+        width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .elementos-encriptador{
+        margin: 0;
+        width: 100%;
+    }
+    .ingreso-texto{
+        width: 500px;
+        font-size: 25px;
+        display: block;
+        margin: 18px auto; 
+    }
+
+    .advertencias{
+        width: 100%;
+        height: 50pxpx;
+        display: block;
+    }
+
+
+    .mensajeadvertencia{
+        margin: 10px auto;
+        width: 50%;
+        font-size: 22px;
+        border: 2px solid #0A3871;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #logo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .botones-encriptador{
+        width: 100%;
+        margin: 0 80px 20px 80px;
+        padding: 5px;
+        font-size: 18px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30px 100px;
+        align-items: center;
+        
+    }
+
+    .botones-encriptador p{
+        margin: 0 0 0 15px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+ 
+    .encriptar{
+        grid-row-start: 2;
+        grid-row-end: -2 ;
+        width: 80%;
+        margin: 0 auto;
+        
+        /*margin: 0 12px 0 45px;*/
+    }
+
+    .desencriptar{
+        grid-row-start: -2;
+        grid-row-end: -1 ;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .respuesta-encriptador{
+        position: relative;
+        width: 600px;
+        height: 400px;
+        top: 0;
+        left: 0%;
+        display: block;
+        margin: 50px auto;
+        
+    }
+    .texto-respuesta{
+        width: 500px;
+        
+        margin: 0 auto;
+        padding: 12px 0;
+    }
+    .respuesta{
+        width: 100%;
+        height: 250px;
+        display: block;
+        margin: 12px auto;
+        text-align:justify;
+    }
+
+}
+
